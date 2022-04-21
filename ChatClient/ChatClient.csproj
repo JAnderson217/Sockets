@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{980DAEC7-0E06-4689-9595-4607D7AC6410}</ProjectGuid>
+    <ProjectGuid>{740034D7-FE56-42D0-8C7D-CACAA846DA2A}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Clients</RootNamespace>
-    <AssemblyName>Clients</AssemblyName>
+    <RootNamespace>ChatClient</RootNamespace>
+    <AssemblyName>ChatClient</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,10 +43,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="GetClients.cs" />
-    <Compile Include="MainClient.cs" />
-    <Compile Include="ClientTest.cs" />
-    <Compile Include="MultipleClients.cs" />
     <Compile Include="Client.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
