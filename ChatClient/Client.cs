@@ -56,6 +56,7 @@ namespace ChatClient
         {
             try
             {
+                
                 //---send a message to the server---
                 NetworkStream ns = client.GetStream();
                 byte[] data =

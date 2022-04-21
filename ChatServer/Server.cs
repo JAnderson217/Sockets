@@ -13,14 +13,16 @@ namespace ChatServer
         const int portNo = 500;
         static void Main(string[] args)
         {
-            Console.WriteLine("How many people are joining you for this chat?");
+            Console.WriteLine("How many people are chatting?");
             int numClients = Int32.Parse(Console.ReadLine());
             for (int i = 0; i < numClients; i++)
             {
+                //launch clients
                 Process myProcess = new Process();
                 string path = Path.GetFullPath(Path.Combine(System.AppContext.BaseDirectory, 
                     @"..\..\..\"));
-                path = path + "ChatClient\\bin\\Debug\\ChatClient.exe";
+                //path = path + "ChatClient\\bin\\Debug\\ChatClient.exe";
+                path = path + "ChatClientForm\\bin\\Debug\\ChatClientForm.exe";
                 //Console.WriteLine(path);
                 myProcess.StartInfo.FileName = path;
                 myProcess.Start();
